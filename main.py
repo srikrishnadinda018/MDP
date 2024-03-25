@@ -28,10 +28,7 @@ with st.sidebar:
                           
 
                           ['Home',
-                          'Diabetes Prediction',
-
-                           'Heart Disease Prediction',
-
+                          'Heart Disease Prediction',
                            'Parkinsons Prediction',
                            'Conclusion'],
 
