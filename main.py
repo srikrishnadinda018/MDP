@@ -1,4 +1,3 @@
-import numpy as np
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
@@ -9,7 +8,7 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-cancer_disease_model = pickle.load(open('cancer_disease_model.sav', 'rb'))
+cancer_disease_model = pickle.load(open('cancer_diseases_model.sav', 'rb'))
 heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 #parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
@@ -105,35 +104,27 @@ if (selected == 'Cancer Disease Prediction'):
     # page title
 
     st.title('Cancer Disease Prediction using ML')
-    input_data = st.text_input('Enter all the information')
-
-    # change the input data to a numpy array
-    input_data_as_numpy_array = np.asarray(input_data)
-
-    # reshape the numpy array as we are predicting for one datapoint
-    input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
-
-
-
-
-
-
-
-
-
+    radius_mea = st.text_input('radius_mea')
+    texture_mea = st.text_input('texture_mea')
+    perimeter_mea = st.text_input('perimeter_mea')
+    area_mea = st.text_input('area_mea')
+    smoothness_mea = st.text_input('smoothness_mea')
+    
+    
 
 
 
     
-    
-    # code for Prediction
+
+
+# code for Prediction
     Cancer_diagnosis = ''
 
     # creating a button for Prediction
 
     if st.button('Cancer Disease Test Result'):
 
-        cancer_prediction = cancer_disease_model.predict(input_data_reshaped)
+        cancer_prediction = cancer_disease_model.predict([[radius_mea,texture_mea,perimeter_mea,area_mea,smoothness_mea]])
 
         if (cancer_prediction[0] == 1):
           Cancer_diagnosis = 'The person is having cancer disease'
