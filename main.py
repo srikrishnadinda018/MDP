@@ -104,10 +104,20 @@ if (selected == 'Cancer Disease Prediction'):
     # page title
 
     st.title('Cancer Disease Prediction using ML')
+   
     input_values = st.text_input('Enter all the medical information')
-    
-    
-    
+    # change the input data to a numpy array
+    input_data_as_numpy_array = np.asarray(input_values)
+    # reshape the numpy array as we are predicting for one datapoint
+    input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
+
+
+
+
+
+
+
+
     
     
     # code for Prediction
@@ -117,7 +127,7 @@ if (selected == 'Cancer Disease Prediction'):
 
     if st.button('Cancer Disease Test Result'):
 
-        cancer_prediction = cancer_disease_model.predict([[input_values]])
+        cancer_prediction = cancer_disease_model.predict(input_data_reshaped)
 
         if (cancer_prediction[0] == 1):
           Cancer_diagnosis = 'The person is having cancer disease'
