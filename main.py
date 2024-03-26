@@ -8,7 +8,7 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-#diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
+cancer_disease_model = pickle.load(open('cancer_disease_model.sav', 'rb'))
 heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 #parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
@@ -29,10 +29,10 @@ with st.sidebar:
 
                           ['Home',
                           'Heart Disease Prediction',
-                           'Parkinsons Prediction',
-                           'Conclusion'],
+                          'Cancer Disease Prediction',
+                          'Conclusion'],
 
-                          icons=['activity','heart','person'],
+                          
 
                           default_index=0)
 
@@ -87,3 +87,44 @@ if (selected == 'Heart Disease Prediction'):
         
 
     st.success(heart_diagnosis)
+
+
+
+
+
+
+
+
+
+
+# Cancer Disease Prediction Page
+
+if (selected == 'Cancer Disease Prediction'):
+
+    # page title
+
+    st.title('Cancer Disease Prediction using ML')
+    input_values = st.text_input('Enter all the medical information')
+    
+    
+    
+    
+    
+    # code for Prediction
+    Cancer_diagnosis = ''
+
+    # creating a button for Prediction
+
+    if st.button('Cancer Disease Test Result'):
+
+        cancer_prediction = cancer_disease_model.predict([[input_values]])
+
+        if (cancer_prediction[0] == 1):
+          Cancer_diagnosis = 'The person is having cancer disease'
+
+        else:
+          Cancer_diagnosis = 'The person does not have any cancer disease'
+
+        
+
+    st.success(Cancer_diagnosis)                                                          
