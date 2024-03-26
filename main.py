@@ -127,10 +127,10 @@ if (selected == 'Cancer Disease Prediction'):
         cancer_prediction = cancer_disease_model.predict([[radius_mea,texture_mea,perimeter_mea,area_mea,smoothness_mea]])
 
         if (cancer_prediction[0] == 1):
-          Cancer_diagnosis = 'The person is having cancer disease'
+          Cancer_diagnosis = 'The person may not have any cancer disease(B)'
 
         else:
-          Cancer_diagnosis = 'The person does not have any cancer disease'
+          Cancer_diagnosis = 'The person may have any cancer disease(M)'
 
         
 
