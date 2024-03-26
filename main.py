@@ -1,4 +1,3 @@
-import numpy as np
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
@@ -105,12 +104,17 @@ if (selected == 'Cancer Disease Prediction'):
     # page title
 
     st.title('Cancer Disease Prediction using ML')
-   
-    input_values = st.text_input('Enter all the medical information')
+    input_data = st.text_input()
+
     # change the input data to a numpy array
-    input_data_as_numpy_array = np.asarray(input_values)
+    input_data_as_numpy_array = np.asarray(input_data)
+
     # reshape the numpy array as we are predicting for one datapoint
     input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
+
+
+
+
 
 
 
