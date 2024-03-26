@@ -105,7 +105,7 @@ if (selected == 'Cancer Disease Prediction'):
     # page title
 
     st.title('Cancer Disease Prediction using ML')
-    input_data = st.text_input()
+    input_data = st.text_input('Enter all the information')
 
     # change the input data to a numpy array
     input_data_as_numpy_array = np.asarray(input_data)
