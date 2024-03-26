@@ -46,7 +46,7 @@ with st.sidebar:
 
 
 
-# Heart Disease Prediction Page
+# (1) Heart Disease Prediction Page
 
 if (selected == 'Heart Disease Prediction'):
 
@@ -97,7 +97,7 @@ if (selected == 'Heart Disease Prediction'):
 
 
 
-# Cancer Disease Prediction Page
+# (2) Cancer Disease Prediction Page
 
 if (selected == 'Cancer Disease Prediction'):
 
