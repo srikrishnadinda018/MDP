@@ -174,7 +174,7 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
 
     if st.button('Parkinson Disease Test Result'):
 
-        parkinson_prediction = perkinson_disease_model.predict([[MDVPFo,MDVPFhi,MDVPFlo,MDVPJitter,MDVPJitter,MDVPRAP,MDVPPPQ,JitterDD,MDVPShimmer,MDVPShimmer,ShimmerAPQ3,ShimmerAPQ5,MDVPAPQ,ShimmerDDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])                          
+        parkinson_prediction = parkinson_disease_model.predict([[MDVPFo,MDVPFhi,MDVPFlo,MDVPJitter,MDVPJitter,MDVPRAP,MDVPPPQ,JitterDD,MDVPShimmer,MDVPShimmer,ShimmerAPQ3,ShimmerAPQ5,MDVPAPQ,ShimmerDDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])                          
 
         
 
