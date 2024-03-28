@@ -144,20 +144,20 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
     # page title
 
     st.title('Parkinson Disease Prediction using ML')
-    MDVP:Fo(Hz) = st.text_input('MDVP:Fo(Hz)')
-    MDVP:Fhi(Hz) = st.text_input('MDVP:Fhi(Hz)')
-    MDVP:Flo(Hz) = st.text_input('MDVP:Flo(Hz)')
-    MDVP:Jitter = st.text_input('MDVP:Jitter(%)')
-    MDVP:Jitter = st.text_input('MDVP:Jitter(Abs)')
-    MDVP:RAP = st.text_input('MDVP:RAP')
-    MDVP:PPQ = st.text_input('MDVP:PPQ')
-    Jitter:DD = st.text_input('Jitter:DD')
-    MDVP:Shimmer = st.text_input('MDVP:Shimmer')
-    MDVP:Shimmer = st.text_input('MDVP:Shimmer(dB)')
-    Shimmer:APQ3 = st.text_input('Shimmer:APQ3')
-    Shimmer:APQ5 = st.text_input('Shimmer:APQ5')
-    MDVP:APQ = st.text_input('MDVP:APQ')
-    Shimmer:DDA = st.text_input('Shimmer:DDA')
+    MDVPFo = st.text_input('MDVP:Fo(Hz)')
+    MDVPFhi = st.text_input('MDVP:Fhi(Hz)')
+    MDVPFlo = st.text_input('MDVP:Flo(Hz)')
+    MDVPJitter = st.text_input('MDVP:Jitter(%)')
+    MDVPJitter = st.text_input('MDVP:Jitter(Abs)')
+    MDVPRAP = st.text_input('MDVP:RAP')
+    MDVPPPQ = st.text_input('MDVP:PPQ')
+    JitterDD = st.text_input('Jitter:DD')
+    MDVPShimmer = st.text_input('MDVP:Shimmer')
+    MDVPShimmer = st.text_input('MDVP:Shimmer(dB)')
+    ShimmerAPQ3 = st.text_input('Shimmer:APQ3')
+    ShimmerAPQ5 = st.text_input('Shimmer:APQ5')
+    MDVPAPQ = st.text_input('MDVP:APQ')
+    ShimmerDDA = st.text_input('Shimmer:DDA')
     NHR = st.text_input('NHR')
     HNR = st.text_input('HNR')
     RPDE = st.text_input('RPDE')
@@ -174,7 +174,7 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
 
     if st.button('Parkinson Disease Test Result'):
 
-        parkinson_prediction = perkinson_disease_model.predict([[MDVP:Fo(Hz),MDVP:Fhi(Hz),MDVP:Flo(Hz),MDVP:Jitter,MDVP:Jitter,MDVP:RAP,MDVP:PPQ,Jitter:DD,MDVP:Shimmer,MDVP:Shimmer,Shimmer:APQ3,Shimmer:APQ5,MDVP:APQ,Shimmer:DDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])                          
+        parkinson_prediction = perkinson_disease_model.predict([[MDVPFo,MDVPFhi,MDVPFlo,MDVPJitter,MDVPJitter,MDVPRAP,MDVPPPQ,JitterDD,MDVPShimmer,MDVPShimmer,ShimmerAPQ3,ShimmerAPQ5,MDVPAPQ,ShimmerDDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])                          
 
         
 
