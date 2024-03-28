@@ -179,10 +179,10 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
         
 
         if (parkinson_prediction[0] == 1):
-          parkinson_diagnosis = 'The person is having parkinson disease'
+          parkinson_diagnosis = 'The person is not having parkinson disease'
 
         else:
-          parkinson_diagnosis = 'The person does not have any parkinson disease'
+          parkinson_diagnosis = 'The person have any parkinson disease'
 
         
 
