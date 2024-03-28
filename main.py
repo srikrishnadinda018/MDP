@@ -154,18 +154,7 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
     JitterDD = st.text_input('Jitter:DD')
     MDVPShimmer = st.text_input('MDVP:Shimmer')
     MDVPShimmer = st.text_input('MDVP:Shimmer(dB)')
-    ShimmerAPQ3 = st.text_input('Shimmer:APQ3')
-    ShimmerAPQ5 = st.text_input('Shimmer:APQ5')
-    MDVPAPQ = st.text_input('MDVP:APQ')
-    ShimmerDDA = st.text_input('Shimmer:DDA')
-    NHR = st.text_input('NHR')
-    HNR = st.text_input('HNR')
-    RPDE = st.text_input('RPDE')
-    DFA = st.text_input('DFA')
-    spread1 = st.text_input('spread1')
-    spread2 = st.text_input('spread2')
-    D2 = st.text_input('D2')
-    PPE = st.text_input('PPE')
+    
     
     # code for Prediction
     parkinson_diagnosis = ''
@@ -174,7 +163,7 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
 
     if st.button('Parkinson Disease Test Result'):
 
-        parkinson_prediction = parkinson_disease_model.predict([[MDVPFo,MDVPFhi,MDVPFlo,MDVPJitter,MDVPJitter,MDVPRAP,MDVPPPQ,JitterDD,MDVPShimmer,MDVPShimmer,ShimmerAPQ3,ShimmerAPQ5,MDVPAPQ,ShimmerDDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])                          
+        parkinson_prediction = parkinson_disease_model.predict([[MDVPFo,MDVPFhi,MDVPFlo,MDVPJitter,MDVPJitter,MDVPRAP,MDVPPPQ,JitterDD,MDVPShimmer,MDVPShimmer]])                          
 
         
 
