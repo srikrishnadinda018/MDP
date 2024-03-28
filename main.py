@@ -7,10 +7,9 @@ from streamlit_option_menu import option_menu
 
 
 # loading the saved models
-
-cancer_disease_model = pickle.load(open('cancer_diseases_model.sav', 'rb'))
 heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
-#parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
+cancer_disease_model = pickle.load(open('cancer_diseases_model.sav', 'rb'))
+parkinson_disease_model = pickle.load(open('perkinson_disease_model.sav', 'rb'))
 
 
 
@@ -23,14 +22,15 @@ with st.sidebar:
 
     
 
-    selected = option_menu('Multiple Disease Prediction System',
+    selected = option_menu('MULTIPLE DISEASE PREDICTION SYSTEM',
 
                           
 
-                          ['Home',
-                          'Heart Disease Prediction',
-                          'Cancer Disease Prediction',
-                          'Conclusion'],
+                          ['HOME',
+                          'HEART DISEASE PREDICTION',
+                          'CANCER DISEASE PREDICTION',
+                          'PARKINSON DISEASE PREDICTION',
+                          'CONCLUSION'],
 
                           
 
@@ -109,15 +109,8 @@ if (selected == 'Cancer Disease Prediction'):
     perimeter_mea = st.text_input('perimeter_mea')
     area_mea = st.text_input('area_mea')
     smoothness_mea = st.text_input('smoothness_mea')
-    
-    
 
-
-
-    
-
-
-# code for Prediction
+    # code for Prediction
     Cancer_diagnosis = ''
 
     # creating a button for Prediction
@@ -134,4 +127,63 @@ if (selected == 'Cancer Disease Prediction'):
 
         
 
-    st.success(Cancer_diagnosis)                                                          
+    st.success(Cancer_diagnosis)
+      
+
+
+
+
+
+
+
+
+# (3) Parkinson Disease Prediction Page
+
+if (selected == 'PARKINSON DISEASE PREDICTION'):
+
+    # page title
+
+    st.title('Parkinson Disease Prediction using ML')
+    MDVP:Fo(Hz) = st.text_input('MDVP:Fo(Hz)')
+    MDVP:Fhi(Hz) = st.text_input('MDVP:Fhi(Hz)')
+    MDVP:Flo(Hz) = st.text_input('MDVP:Flo(Hz)')
+    MDVP:Jitter(%) = st.text_input('MDVP:Jitter(%)')
+    MDVP:Jitter(Abs) = st.text_input('MDVP:Jitter(Abs)')
+    MDVP:RAP = st.text_input('MDVP:RAP')
+    MDVP:PPQ = st.text_input('MDVP:PPQ')
+    Jitter:DD = st.text_input('Jitter:DD')
+    MDVP:Shimmer = st.text_input('MDVP:Shimmer')
+    MDVP:Shimmer(dB) = st.text_input('MDVP:Shimmer(dB)')
+    Shimmer:APQ3 = st.text_input('Shimmer:APQ3')
+    Shimmer:APQ5 = st.text_input('Shimmer:APQ5')
+    MDVP:APQ = st.text_input('MDVP:APQ')
+    Shimmer:DDA = st.text_input('Shimmer:DDA')
+    NHR = st.text_input('NHR')
+    HNR = st.text_input('HNR')
+    RPDE = st.text_input('RPDE')
+    DFA = st.text_input('DFA')
+    spread1 = st.text_input('spread1')
+    spread2 = st.text_input('spread2')
+    D2 = st.text_input('D2')
+    PPE = st.text_input('PPE')
+    
+    # code for Prediction
+    parkinson_diagnosis = ''
+
+    # creating a button for Prediction
+
+    if st.button('Parkinson Disease Test Result'):
+
+        parkinson_prediction = perkinson_disease_model.predict([[MDVP:Fo(Hz),MDVP:Fhi(Hz),MDVP:Flo(Hz),MDVP:Jitter(%),MDVP:Jitter(Abs),MDVP:RAP,MDVP:PPQ,Jitter:DD,MDVP:Shimmer,MDVP:Shimmer(dB),Shimmer:APQ3,Shimmer:APQ5,MDVP:APQ,Shimmer:DDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])                          
+
+        
+
+        if (parkinson_prediction[0] == 1):
+          parkinson_diagnosis = 'The person is having parkinson disease'
+
+        else:
+          parkinson_diagnosis = 'The person does not have any parkinson disease'
+
+        
+
+    st.success(parkinson_diagnosis)
