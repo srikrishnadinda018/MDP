@@ -48,7 +48,7 @@ with st.sidebar:
 
 # (1) Heart Disease Prediction Page
 
-if (selected == 'Heart Disease Prediction'):
+if (selected == 'HEART DISEASE PREDICTION'):
 
     # page title
 
@@ -99,7 +99,7 @@ if (selected == 'Heart Disease Prediction'):
 
 # (2) Cancer Disease Prediction Page
 
-if (selected == 'Cancer Disease Prediction'):
+if (selected == 'CANCER DISEASE PREDICTION'):
 
     # page title
 
