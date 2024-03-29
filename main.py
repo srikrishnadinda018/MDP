@@ -49,6 +49,7 @@ with st.sidebar:
 # (1) Heart Disease Prediction Page
 
 if (selected == 'HEART DISEASE PREDICTION'):
+    st.image("heart.jpeg",use_column_width=True)
 
     # page title
 
@@ -107,6 +108,7 @@ if (selected == 'HEART DISEASE PREDICTION'):
 if (selected == 'CANCER DISEASE PREDICTION'):
 
     # page title
+    st.image("Cancer.jpeg",use_column_width=True)
 
     st.title('Cancer Disease Prediction using ML')
     radius_mea = st.number_input('radius_mea')
@@ -155,6 +157,7 @@ if (selected == 'CANCER DISEASE PREDICTION'):
 if (selected == 'PARKINSON DISEASE PREDICTION'):
 
     # page title
+    st.image("Parkinson.jpeg",use_column_width=True)
 
     st.title('Parkinson Disease Prediction using ML')
     MDVPFo = st.number_input('MDVP:Fo(Hz)')
