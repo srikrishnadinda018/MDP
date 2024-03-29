@@ -184,9 +184,9 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
         else:
             parkinson_prediction = parkinson_disease_model.predict([[MDVPFo,MDVPFhi,MDVPFlo,MDVPJitter,MDVPJitte,MDVPRAP,MDVPPPQ,JitterDD,MDVPShimmer,MDVPShimme]])
             if (parkinson_prediction[0] == 1):
-                parkinson_diagnosis = 'The person is having parkinson disease'
+                parkinson_diagnosis = 'The person is not having parkinson disease'
             else:
-                parkinson_diagnosis = 'The person have not any Parkinson disease'
+                parkinson_diagnosis = 'The person have any Parkinson disease'
             st.success(parkinson_diagnosis)
         
 
