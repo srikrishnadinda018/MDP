@@ -83,8 +83,8 @@ if (selected == 'HEART DISEASE PREDICTION'):
 
         elif (heart_prediction[0] == 0):
           heart_diagnosis = 'The person does not have any heart disease'
-        else:
-          st.success("Please Enter all Medical Information")
+    else:
+        st.success("Please Enter all Medical Information")
 
         
 
