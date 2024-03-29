@@ -87,6 +87,7 @@ if (selected == 'HEART DISEASE PREDICTION'):
         
 
     st.success(heart_diagnosis)
+    st.image("static_image_folder/images (1).jpeg", caption="Mapping View Of Heart Disease In India", use_column_width=True)
 
 
 
