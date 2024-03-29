@@ -53,19 +53,19 @@ if (selected == 'HEART DISEASE PREDICTION'):
     # page title
 
     st.title('Heart Disease Prediction using ML')
-    age = st.text_input('Age')
-    sex = st.text_input('Sex')
-    cp = st.text_input('Chest Pain types')
-    trestbps = st.text_input('Resting Blood Pressure')
-    chol = st.text_input('Serum Cholestoral in mg/dl')
-    fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl')
-    restecg = st.text_input('Resting Electrocardiographic results')
-    thalach = st.text_input('Maximum Heart Rate achieved')
-    exang = st.text_input('Exercise Induced Angina')
-    oldpeak = st.text_input('ST depression induced by exercise')
-    slope = st.text_input('Slope of the peak exercise ST segment')
-    ca = st.text_input('Major vessels colored by flourosopy')
-    thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
+    age = st.number_input('Age')
+    sex = st.number_input('Sex')
+    cp = st.number_input('Chest Pain types')
+    trestbps = st.number_input('Resting Blood Pressure')
+    chol = st.number_input('Serum Cholestoral in mg/dl')
+    fbs = st.number_input('Fasting Blood Sugar > 120 mg/dl')
+    restecg = st.number_input('Resting Electrocardiographic results')
+    thalach = st.number_input('Maximum Heart Rate achieved')
+    exang = st.number_input('Exercise Induced Angina')
+    oldpeak = st.number_input('ST depression induced by exercise')
+    slope = st.number_input('Slope of the peak exercise ST segment')
+    ca = st.number_input('Major vessels colored by flourosopy')
+    thal = st.number_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
     
     # code for Prediction
     heart_diagnosis = ''
@@ -109,11 +109,11 @@ if (selected == 'CANCER DISEASE PREDICTION'):
     # page title
 
     st.title('Cancer Disease Prediction using ML')
-    radius_mea = st.text_input('radius_mea')
-    texture_mea = st.text_input('texture_mea')
-    perimeter_mea = st.text_input('perimeter_mea')
-    area_mea = st.text_input('area_mea')
-    smoothness_mea = st.text_input('smoothness_mea')
+    radius_mea = st.number_input('radius_mea')
+    texture_mea = st.number_input('texture_mea')
+    perimeter_mea = st.number_input('perimeter_mea')
+    area_mea = st.number_input('area_mea')
+    smoothness_mea = st.number_input('smoothness_mea')
 
     # code for Prediction
     Cancer_diagnosis = ''
@@ -121,21 +121,22 @@ if (selected == 'CANCER DISEASE PREDICTION'):
     # creating a button for Prediction
 
     if st.button('Cancer Disease Test Result'):
+        if any(not x for x in [radius_mea,texture_mea,perimeter_mea,area_mea,smoothness_mea]):
+            st.error("Please fill all the details.")
 
-        cancer_prediction = cancer_disease_model.predict([[radius_mea,texture_mea,perimeter_mea,area_mea,smoothness_mea]])
-
-        if (cancer_prediction[0] == 1):
-          Cancer_diagnosis = 'The person may not have any cancer disease(B)'
-
-        elif (cancer_prediction[0] == 0):
-          Cancer_diagnosis = 'The person does not have any heart disease'
         else:
-          st.success("Please Enter all Medical Information")
+            cancer_prediction = cancer_disease_model.predict([[radius_mea,texture_mea,perimeter_mea,area_mea,smoothness_mea]])
+            if (cancer_prediction[0] == 1):
+                Cancer_diagnosis = 'The person may not have any cancer disease(B)'
+            else:
+                Cancer_diagnosis = 'The person does not have any heart disease'
+            st.success(Cancer_diagnosis)
+                
 
 
         
 
-    st.success(Cancer_diagnosis)
+    
     st.image("image (4).jpeg", caption="Mapping View Of Cancer Disease In India", use_column_width=True)
     st.image("images(5).jpg", caption="Statistical Chart Of Age-Group vs First Time Cancer Disease", use_column_width=True)
     st.image("image (6).jpeg", caption="Statistical Chart Of Gender vs First Time Cancer Disease", use_column_width=True)
@@ -156,16 +157,16 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
     # page title
 
     st.title('Parkinson Disease Prediction using ML')
-    MDVPFo = st.text_input('MDVP:Fo(Hz)')
-    MDVPFhi = st.text_input('MDVP:Fhi(Hz)')
-    MDVPFlo = st.text_input('MDVP:Flo(Hz)')
-    MDVPJitter = st.text_input('MDVP:Jitter(%)')
-    MDVPJitte = st.text_input('MDVP:Jitter(Abs)')
-    MDVPRAP = st.text_input('MDVP:RAP')
-    MDVPPPQ = st.text_input('MDVP:PPQ')
-    JitterDD = st.text_input('Jitter:DD')
-    MDVPShimmer = st.text_input('MDVP:Shimmer')
-    MDVPShimme = st.text_input('MDVP:Shimmer(dB)')
+    MDVPFo = st.number_input('MDVP:Fo(Hz)')
+    MDVPFhi = st.number_input('MDVP:Fhi(Hz)')
+    MDVPFlo = st.number_input('MDVP:Flo(Hz)')
+    MDVPJitter = st.number_input('MDVP:Jitter(%)')
+    MDVPJitte = st.number_input('MDVP:Jitter(Abs)')
+    MDVPRAP = st.number_input('MDVP:RAP')
+    MDVPPPQ = st.number_input('MDVP:PPQ')
+    JitterDD = st.number_input('Jitter:DD')
+    MDVPShimmer = st.number_input('MDVP:Shimmer')
+    MDVPShimme = st.number_input('MDVP:Shimmer(dB)')
     
     
     # code for Prediction
@@ -174,24 +175,20 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
     # creating a button for Prediction
 
     if st.button('Parkinson Disease Test Result'):
-
-        parkinson_prediction = parkinson_disease_model.predict([[MDVPFo,MDVPFhi,MDVPFlo,MDVPJitter,MDVPJitte,MDVPRAP,MDVPPPQ,JitterDD,MDVPShimmer,MDVPShimme]])                          
-
-        
-
-        if (parkinson_prediction[0] == 1):
-          parkinson_diagnosis = 'The person is not having parkinson disease'
-
-        elif (parkinson_prediction[0] == 0):
-          parkinson_diagnosis = 'The person does not have any heart disease'
+        if any(not x for x in [MDVPFo,MDVPFhi,MDVPFlo,MDVPJitter,MDVPJitte,MDVPRAP,MDVPPPQ,JitterDD,MDVPShimmer,MDVPShimme]):
+            st.error("Please fill all the details.")
         else:
-          st.success("Please Enter all Medical Information")
-
-
+            parkinson_prediction = parkinson_disease_model.predict([[MDVPFo,MDVPFhi,MDVPFlo,MDVPJitter,MDVPJitte,MDVPRAP,MDVPPPQ,JitterDD,MDVPShimmer,MDVPShimme]])
+            if (parkinson_prediction[0] == 1):
+                parkinson_diagnosis = 'The person is not having parkinson disease'
+            else:
+                parkinson_diagnosis = 'The person does not have any heart disease'
+            st.success(parkinson_diagnosis)
         
 
-    st.success(parkinson_diagnosis)
+
+                                  
+
     st.image("images (7).jpeg", caption="Statistical View Of Parkinson's Disease In India", use_column_width=True)
     st.image("images (8).png", caption="Statistical Chart Of Age-Group vs First Time Parkinson's Disease", use_column_width=True)
     st.image("images (9).jpg", caption="Statistical Chart Of Gender vs First Time Parkinson's Disease", use_column_width=True)
-
