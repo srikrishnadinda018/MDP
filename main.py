@@ -112,11 +112,11 @@ if (selected == 'CANCER DISEASE PREDICTION'):
     st.image("Cancer.jpeg",use_column_width=True)
 
     st.title('Cancer Disease Prediction using ML')
-    radius_mea = st.number_input('radius_mea')
-    texture_mea = st.number_input('texture_mea')
-    perimeter_mea = st.number_input('perimeter_mea')
-    area_mea = st.number_input('area_mea')
-    smoothness_mea = st.number_input('smoothness_mea')
+    radius_mea = st.text_input('radius_mea')
+    texture_mea = st.text_input('texture_mea')
+    perimeter_mea = st.text_input('perimeter_mea')
+    area_mea = st.text_input('area_mea')
+    smoothness_mea = st.text_input('smoothness_mea')
 
     # code for Prediction
     Cancer_diagnosis = ''
@@ -161,16 +161,16 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
     st.image("Parkinson.jpeg",use_column_width=True)
 
     st.title('Parkinson Disease Prediction using ML')
-    MDVPFo = st.number_input('MDVP:Fo(Hz)')
-    MDVPFhi = st.number_input('MDVP:Fhi(Hz)')
-    MDVPFlo = st.number_input('MDVP:Flo(Hz)')
-    MDVPJitter = st.number_input('MDVP:Jitter(%)')
-    MDVPJitte = st.number_input('MDVP:Jitter(Abs)')
-    MDVPRAP = st.number_input('MDVP:RAP')
-    MDVPPPQ = st.number_input('MDVP:PPQ')
-    JitterDD = st.number_input('Jitter:DD')
-    MDVPShimmer = st.number_input('MDVP:Shimmer')
-    MDVPShimme = st.number_input('MDVP:Shimmer(dB)')
+    MDVPFo = st.text_input('MDVP:Fo(Hz)')
+    MDVPFhi = st.text_input('MDVP:Fhi(Hz)')
+    MDVPFlo = st.text_input('MDVP:Flo(Hz)')
+    MDVPJitter = st.text_input('MDVP:Jitter(%)')
+    MDVPJitte = st.text_input('MDVP:Jitter(Abs)')
+    MDVPRAP = st.text_input('MDVP:RAP')
+    MDVPPPQ = st.text_input('MDVP:PPQ')
+    JitterDD = st.text_input('Jitter:DD')
+    MDVPShimmer = st.text_input('MDVP:Shimmer')
+    MDVPShimme = st.text_input('MDVP:Shimmer(dB)')
     
     
     # code for Prediction
