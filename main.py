@@ -73,22 +73,22 @@ if (selected == 'HEART DISEASE PREDICTION'):
     # creating a button for Prediction
 
     if st.button('Heart Disease Test Result'):
+      if any(not x for x in [age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]):
+        st.error("Please fill all the details.")
+      else:
+        heart_prediction = heart_disease_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]])                          
 
-        heart_prediction = heart_disease_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg,thalach,exang,oldpeak,slope,ca,thal]])                          
+        if heart_prediction[0] == 1:
+            heart_diagnosis = 'The person is having heart disease'
+        else:
+            heart_diagnosis = 'The person does not have any heart disease'
+        st.success(heart_diagnosis)
+
+
 
         
 
-        if (heart_prediction[0] == 1):
-          heart_diagnosis = 'The person is having heart disease'
-
-        elif (heart_prediction[0] == 0):
-          heart_diagnosis = 'The person does not have any heart disease'
-    else:
-        st.success("Please Enter all Medical Information")
-
-        
-
-    st.success(heart_diagnosis)
+    
     st.image("images (1).jpg", caption="Mapping View Of Heart Disease In India", use_column_width=True)
     st.image("images(2).jpeg", caption="Statistical Chart Of Age-Group vs First Time Heart Disease", use_column_width=True)
     st.image("image (3).jpeg", caption="Statistical Chart Of Gender vs First Time Heart Disease", use_column_width=True)
