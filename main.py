@@ -88,6 +88,8 @@ if (selected == 'HEART DISEASE PREDICTION'):
 
     st.success(heart_diagnosis)
     st.image("images (1).jpg", caption="Mapping View Of Heart Disease In India", use_column_width=True)
+    st.image("images(2).jpeg", caption="Statistical Chart Of Age-Group vs First Time Heart Disease", use_column_width=True)
+    st.image("image (3).jpeg", caption="Statistical Chart Of Gender vs First Time Heart Disease", use_column_width=True)
 
 
 
@@ -129,6 +131,10 @@ if (selected == 'CANCER DISEASE PREDICTION'):
         
 
     st.success(Cancer_diagnosis)
+    st.image("image (4).jpeg", caption="Mapping View Of Cancer Disease In India", use_column_width=True)
+    st.image("images(5).jpg", caption="Statistical Chart Of Age-Group vs First Time Cancer Disease", use_column_width=True)
+    st.image("image (6).jpeg", caption="Statistical Chart Of Gender vs First Time Cancer Disease", use_column_width=True)
+
       
 
 
@@ -177,3 +183,7 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
         
 
     st.success(parkinson_diagnosis)
+    st.image("images (7).jpeg", caption="Statistical View Of Parkinson's Disease In India", use_column_width=True)
+    st.image("images (8).png", caption="Statistical Chart Of Age-Group vs First Time Parkinson's Disease", use_column_width=True)
+    st.image("images (9).jpg", caption="Statistical Chart Of Gender vs First Time Parkinson's Disease", use_column_width=True)
+
