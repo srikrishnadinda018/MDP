@@ -81,10 +81,9 @@ if (selected == 'HEART DISEASE PREDICTION'):
 
         if heart_prediction[0] == 1:
             heart_diagnosis = 'The person is having heart disease'
-        elif heart_prediction[0] == 0:
-            heart_diagnosis = 'The person is not having heart disease'
         else:
-            heart_diagnosis = 'not found prediction'
+            heart_diagnosis = 'The person is not having heart disease'
+        
         st.success(heart_diagnosis)
 
 
