@@ -63,7 +63,7 @@ if (selected == 'HEART DISEASE PREDICTION'):
     restecg = st.number_input('Resting Electrocardiographic results',step=1)
     thalach = st.number_input('Maximum Heart Rate achieved',step=1)
     exang = st.number_input('Exercise Induced Angina',step=1)
-    oldpeak = st.number_input('ST depression induced by exercise')
+    oldpeak = st.text_input('ST depression induced by exercise')
     slope = st.number_input('Slope of the peak exercise ST segment',step=1)
     ca = st.number_input('Major vessels colored by flourosopy',step=1)
     thal = st.number_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect',step=1)
