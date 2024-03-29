@@ -81,8 +81,10 @@ if (selected == 'HEART DISEASE PREDICTION'):
         if (heart_prediction[0] == 1):
           heart_diagnosis = 'The person is having heart disease'
 
-        else:
+        elif (heart_prediction[0] == 0):
           heart_diagnosis = 'The person does not have any heart disease'
+        else:
+          st.success("Please Enter all Medical Information")
 
         
 
@@ -125,8 +127,11 @@ if (selected == 'CANCER DISEASE PREDICTION'):
         if (cancer_prediction[0] == 1):
           Cancer_diagnosis = 'The person may not have any cancer disease(B)'
 
+        elif (cancer_prediction[0] == 0):
+          Cancer_diagnosis = 'The person does not have any heart disease'
         else:
-          Cancer_diagnosis = 'The person may have any cancer disease(M)'
+          st.success("Please Enter all Medical Information")
+
 
         
 
@@ -177,8 +182,11 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
         if (parkinson_prediction[0] == 1):
           parkinson_diagnosis = 'The person is not having parkinson disease'
 
+        elif (parkinson_prediction[0] == 0):
+          parkinson_diagnosis = 'The person does not have any heart disease'
         else:
-          parkinson_diagnosis = 'The person have any parkinson disease'
+          st.success("Please Enter all Medical Information")
+
 
         
 
