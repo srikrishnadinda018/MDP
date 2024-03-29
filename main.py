@@ -133,7 +133,7 @@ if (selected == 'CANCER DISEASE PREDICTION'):
             if (cancer_prediction[0] == 1):
                 Cancer_diagnosis = 'The person may not have any cancer disease(B)'
             else:
-                Cancer_diagnosis = 'The person does not have any heart disease'
+                Cancer_diagnosis = 'The person may have any cancer disease(M)'
             st.success(Cancer_diagnosis)
                 
 
@@ -187,7 +187,7 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
             if (parkinson_prediction[0] == 1):
                 parkinson_diagnosis = 'The person is not having parkinson disease'
             else:
-                parkinson_diagnosis = 'The person does not have any heart disease'
+                parkinson_diagnosis = 'The person have any Parkinson disease'
             st.success(parkinson_diagnosis)
         
 
