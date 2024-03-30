@@ -32,10 +32,11 @@ with st.sidebar:
                           'PARKINSON DISEASE PREDICTION',
                           'CONCLUSION'],
 
-                          st.write('version-1.0.0')
-                          st.write('application is developed only for project purpose. Not for serious medical concern use')
+                          
 
                           default_index=0)
+    st.write('version-1.0.0')
+    st.write('application is developed only for project purpose. Not for serious medical concern use')
 
     
 
