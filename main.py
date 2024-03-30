@@ -33,7 +33,7 @@ with st.sidebar:
                           'CONCLUSION'],
 
                           st.write('version-1.0.0')
-                          st.error('application is developed only for project purpose. Not for serious medical concern use')
+                          st.write('application is developed only for project purpose. Not for serious medical concern use')
 
                           default_index=0)
 
