@@ -236,3 +236,78 @@ if (selected == 'HOME'):
     st.write("4. **Cardiac Rehabilitation:** A structured program involving exercise training, education, and counseling to help individuals recover from heart-related events and improve their overall cardiovascular health.")
     st.write("Early detection, prompt treatment, and ongoing management are essential in effectively managing heart disease and reducing the risk of complications. Regular check-ups with a healthcare provider are crucial for monitoring heart health and addressing any concerns.")
 
+
+
+    st.title(' Cancer Disease Problem in India')
+    st.image("home_cancer.jpeg",use_column_width=True)
+    # Cancer Disease Overview
+    st.write("**Cancer Disease Overview:**")
+    st.write("Cancer is a group of diseases characterized by the uncontrolled growth and spread of abnormal cells. It can affect various organs and tissues in the body, leading to a range of symptoms and complications.")
+
+    # Types of Cancer
+    st.write("**Types of Cancer:**")
+    st.write("1. **Breast Cancer:** Affects the breast tissue and is one of the most common cancers among women.")
+    st.write("2. **Lung Cancer:** Develops in the lungs and is often associated with smoking or exposure to carcinogens.")
+    st.write("3. **Prostate Cancer:** Occurs in the prostate gland and is one of the most common cancers among men.")
+    st.write("4. **Colorectal Cancer:** Affects the colon or rectum and can develop from precancerous polyps.")
+    st.write("5. **Skin Cancer:** Develops in the skin cells and is often caused by exposure to ultraviolet (UV) radiation from the sun or tanning beds.")
+    st.write("6. **Leukemia:** Affects the blood and bone marrow, leading to the overproduction of abnormal white blood cells.")
+    st.write("7. **Lymphoma:** Affects the lymphatic system, which is part of the body's immune system, and includes Hodgkin lymphoma and non-Hodgkin lymphoma.")
+    st.write("8. **Brain Cancer:** Develops in the brain or spinal cord and can cause symptoms such as headaches, seizures, and neurological changes.")
+
+    # Symptoms of Cancer
+    st.write("**Symptoms of Cancer:**")
+    st.write("1. **Unexplained Weight Loss:** Losing weight without trying can be a symptom of various types of cancer.")
+    st.write("2. **Fatigue:** Feeling tired or weak, even with adequate rest and sleep.")
+    st.write("3. **Persistent Pain:** Chronic pain that does not go away and may worsen over time.")
+    st.write("4. **Changes in Bowel or Bladder Habits:** Including diarrhea, constipation, blood in the stool or urine, or changes in urination patterns.")
+    st.write("5. **Unexplained Bruising or Bleeding:** Including easy bruising, frequent nosebleeds, or bleeding gums.")
+    st.write("6. **Persistent Cough or Hoarseness:** Especially if accompanied by blood in the sputum or difficulty swallowing.")
+    st.write("7. **Skin Changes:** Such as new moles or changes in the size, shape, or color of existing moles.")
+
+    # Treatment of Cancer
+    st.write("**Treatment of Cancer:**")
+    st.write("1. **Surgery:** Removal of cancerous tumors or affected tissues through surgical procedures.")
+    st.write("2. **Chemotherapy:** The use of drugs to kill cancer cells or prevent them from growing and spreading.")
+    st.write("3. **Radiation Therapy:** Using high-energy beams to target and destroy cancer cells.")
+    st.write("4. **Immunotherapy:** Stimulating the body's immune system to recognize and attack cancer cells.")
+    st.write("5. **Targeted Therapy:** Drugs or other substances that specifically target cancer cells while minimizing damage to healthy cells.")
+    st.write("6. **Hormone Therapy:** Blocking or inhibiting the production or action of hormones that promote cancer growth.")
+    st.write("7. **Bone Marrow Transplantation:** Replacing diseased bone marrow with healthy stem cells to treat certain types of cancer.")
+
+    st.write("Early detection, prompt treatment, and ongoing monitoring are crucial for improving cancer outcomes and quality of life. Regular screenings and consultations with healthcare professionals can aid in early diagnosis and appropriate management.")
+
+
+   
+
+
+    st.title(' Parkinson's Disease Problem in India')
+    st.image("home_parkin.jpeg",use_column_width=True)
+    
+
+#Parkinson's Disease Overview
+st.write("**Parkinson's Disease Overview:**")
+st.write("Parkinson's disease is a progressive neurological disorder that affects movement. It is characterized by tremors, stiffness, bradykinesia (slowness of movement), and impaired balance and coordination. Parkinson's disease results from the loss of dopamine-producing cells in the brain.")
+
+# Symptoms of Parkinson's Disease
+st.write("**Symptoms of Parkinson's Disease:**")
+st.write("1. **Tremors:** Involuntary shaking of the hands, arms, legs, jaw, or face, typically at rest.")
+st.write("2. **Bradykinesia:** Slowness of movement, making simple tasks like buttoning a shirt or walking difficult.")
+st.write("3. **Stiffness:** Muscle rigidity, which can cause discomfort or pain and limit range of motion.")
+st.write("4. **Impaired Balance and Coordination:** Difficulty maintaining balance and coordinating movements, leading to falls or unsteady gait.")
+st.write("5. **Postural Instability:** Difficulty adjusting posture and maintaining an upright position, increasing the risk of falls.")
+st.write("6. **Speech and Swallowing Problems:** Soft or slurred speech, difficulty swallowing, or excessive drooling.")
+st.write("7. **Micrographia:** Handwriting becomes small and cramped.")
+st.write("8. **Masked Face:** Reduced facial expressions, giving the appearance of a 'masked' or expressionless face.")
+
+# Treatment of Parkinson's Disease
+st.write("**Treatment of Parkinson's Disease:**")
+st.write("1. **Medications:** Dopamine-replacement drugs, such as levodopa, can help alleviate motor symptoms. Other medications may be prescribed to manage non-motor symptoms, such as depression, sleep disturbances, or cognitive impairment.")
+st.write("2. **Deep Brain Stimulation (DBS):** A surgical procedure that involves implanting electrodes in the brain to deliver electrical stimulation, helping to regulate abnormal brain activity and reduce motor symptoms.")
+st.write("3. **Physical Therapy:** Exercises and techniques to improve mobility, flexibility, balance, and coordination.")
+st.write("4. **Speech Therapy:** Exercises to strengthen muscles involved in speech and swallowing, as well as strategies to improve communication.")
+st.write("5. **Occupational Therapy:** Techniques and adaptations to help individuals perform daily activities more independently and safely.")
+st.write("6. **Lifestyle Modifications:** Regular exercise, healthy diet, adequate sleep, stress management, and avoiding falls can help improve overall well-being and quality of life.")
+
+st.write("While there is currently no cure for Parkinson's disease, early diagnosis and comprehensive management can help control symptoms, slow disease progression, and improve quality of life. Regular follow-up with healthcare professionals, including neurologists and specialists in movement disorders, is essential for optimal care and support.")
+
