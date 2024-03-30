@@ -32,7 +32,8 @@ with st.sidebar:
                           'PARKINSON DISEASE PREDICTION',
                           'CONCLUSION'],
 
-                          
+                          st.write('version-1.0.0')
+                          st.error('application is developed only for project purpose. Not for serious medical concern use')
 
                           default_index=0)
 
@@ -285,8 +286,8 @@ if (selected == 'HOME'):
     
 
     #Parkinson's Disease Overview
-    st.write("**Parkinson's Disease Overview:**")
-    st.write("Parkinson's disease is a progressive neurological disorder that affects movement. It is characterized by tremors, stiffness, bradykinesia (slowness of movement), and impaired balance and coordination. Parkinson's disease results from the loss of dopamine-producing cells in the brain.")
+    st.write("**Parkinson Disease Overview:**")
+    st.write("Parkinson disease is a progressive neurological disorder that affects movement. It is characterized by tremors, stiffness, bradykinesia (slowness of movement), and impaired balance and coordination. Parkinson disease results from the loss of dopamine-producing cells in the brain.")
 
     #Symptoms of Parkinson's Disease
     st.write("**Symptoms of Parkinson's Disease:**")
@@ -299,6 +300,7 @@ if (selected == 'HOME'):
     st.write("7. **Micrographia:** Handwriting becomes small and cramped.")
     st.write("8. **Masked Face:** Reduced facial expressions, giving the appearance of a 'masked' or expressionless face.")
 
+    
     #Treatment of Parkinson's Disease
     st.write("**Treatment of Parkinson's Disease:**")
     st.write("1. **Medications:** Dopamine-replacement drugs, such as levodopa, can help alleviate motor symptoms. Other medications may be prescribed to manage non-motor symptoms, such as depression, sleep disturbances, or cognitive impairment.")
@@ -309,3 +311,70 @@ if (selected == 'HOME'):
     st.write("6. **Lifestyle Modifications:** Regular exercise, healthy diet, adequate sleep, stress management, and avoiding falls can help improve overall well-being and quality of life.")
 
     st.write("While there is currently no cure for Parkinson's disease, early diagnosis and comprehensive management can help control symptoms, slow disease progression, and improve quality of life. Regular follow-up with healthcare professionals, including neurologists and specialists in movement disorders, is essential for optimal care and support.")
+
+    
+    st.title('Conclusion')
+    st.write("In summary, heart disease, cancer, and Parkinsons disease pose significant health risks worldwide. Early detection and personalized treatment are crucial for managing these conditions. Heart disease requires lifestyle changes and medication, while cancer demands diverse treatments like surgery and chemotherapy. Parkinson's disease necessitates medication, rehabilitation, and sometimes surgical interventions. Collaborative efforts among patients, caregivers, and healthcare providers are essential for improving outcomes and quality of life.")
+
+
+
+
+
+
+
+
+
+
+
+# coding for CONCLUSION  page.....
+if (selected == 'CONCLUSION'):
+    st.title("LET'S TRY TO FIND OUT, HOW TO BE HEALTHY IN TODAY'S WORLD")
+    
+
+
+    # Balanced Diet
+    st.header("1.<i class='fas fa-utensils'></i> Balanced Diet:", unsafe_allow_html=True)
+    st.write("Prioritize fresh fruits, vegetables, whole grains, lean proteins, and healthy fats, while minimizing processed foods and sugary beverages.")
+
+    # Regular Exercise
+    st.header("2. Regular Exercise:")
+    st.write("Incorporate physical activity into your routine, such as walking, cycling, or yoga, aiming for at least 150 minutes of moderate-intensity exercise per week.")
+
+    # Hydration
+    st.header("3. Hydration:")
+    st.write("Drink plenty of water throughout the day to stay hydrated, especially in hot climates.")
+
+    # Stress Management
+    st.header("4. Stress Management:")
+    st.write("Practice relaxation techniques like meditation, deep breathing, or mindfulness to cope with daily stressors.")
+
+    # Sleep
+    st.header("5. Sleep:")
+    st.write("Aim for 7-9 hours of quality sleep each night to support overall health and well-being.")
+
+    # Regular Check-ups
+    st.header("6. Regular Check-ups:")
+    st.write("Schedule regular health check-ups with healthcare professionals for preventive screenings and early detection of any health issues.")
+
+    # Vaccinations
+    st.header("7. Vaccinations:")
+    st.write("Stay up-to-date with recommended vaccinations to protect against infectious diseases prevalent in India.")
+
+    # Hygiene
+    st.header("8. Hygiene:")
+    st.write("Practice good hygiene habits, including regular handwashing with soap and water, to prevent the spread of infections.")
+
+    # Avoid Tobacco and Alcohol
+    st.header("9. Avoid Tobacco and Alcohol:")
+    st.write("Limit or avoid tobacco products and excessive alcohol consumption to reduce the risk of chronic diseases.")
+
+    # Community Support
+    st.header("10. Community Support:")
+    st.write("Engage with local communities and support networks for social connections and mental well-being.")
+
+    st.write("By adopting these healthy lifestyle habits and staying proactive about your health, you can navigate the challenges of modern living in India while promoting long-term wellness.")
+
+
+
+
+    
