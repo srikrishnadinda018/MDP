@@ -35,8 +35,8 @@ with st.sidebar:
                           
 
                           default_index=0)
-    st.write('version-1.0.0')
-    st.write('application is developed only for project purpose. Not for serious medical concern use')
+    st.success('version-1.0.0')
+    st.error('application is developed only for project purpose. Not for serious medical concern use')
 
     
 
@@ -334,7 +334,7 @@ if (selected == 'CONCLUSION'):
 
 
     # Balanced Diet
-    st.header("1.<i class='fas fa-utensils'></i> Balanced Diet:", unsafe_allow_html=True)
+    st.header("<i class='fas fa-utensils"></i>1. Balanced Diet:', unsafe_allow_html=True)
     st.write("Prioritize fresh fruits, vegetables, whole grains, lean proteins, and healthy fats, while minimizing processed foods and sugary beverages.")
 
     # Regular Exercise
