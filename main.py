@@ -334,7 +334,10 @@ if (selected == 'CONCLUSION'):
 
 
     # Balanced Diet
-    st.header('<i class="fas fa-utensils"></i>1. Balanced Diet:', unsafe_allow_html=True)
+    # Add a balanced diet icon using st.image() function
+    st.image("https://image.flaticon.com/icons/png/512/174/174499.png", width=100)
+
+    st.header("1. Balanced Diet:")
     st.write("Prioritize fresh fruits, vegetables, whole grains, lean proteins, and healthy fats, while minimizing processed foods and sugary beverages.")
 
     # Regular Exercise
