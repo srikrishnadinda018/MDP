@@ -334,7 +334,7 @@ if (selected == 'CONCLUSION'):
 
 
     # Balanced Diet
-    st.header("<i class='fas fa-utensils"></i>1. Balanced Diet:', unsafe_allow_html=True)
+    st.header('<i class="fas fa-utensils"></i>1. Balanced Diet:', unsafe_allow_html=True)
     st.write("Prioritize fresh fruits, vegetables, whole grains, lean proteins, and healthy fats, while minimizing processed foods and sugary beverages.")
 
     # Regular Exercise
@@ -376,6 +376,3 @@ if (selected == 'CONCLUSION'):
     st.write("By adopting these healthy lifestyle habits and staying proactive about your health, you can navigate the challenges of modern living in India while promoting long-term wellness.")
 
 
-
-
-    
