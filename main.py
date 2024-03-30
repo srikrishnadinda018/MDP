@@ -209,6 +209,35 @@ if (selected == 'HOME'):
     st.write('Experience our distinguished health hub, where advanced machine learning technology intersects with proactive wellness. Our platform leverages machine learning algorithms to deliver personalized disease prediction, fitness tracking, and comprehensive wellness resources, facilitating your pursuit of optimal health. Equipped with data-driven insights and decision-making tools, we endeavor to cultivate a community of health-conscious individuals committed to enhancing their well-being. Step into our realm and embark on a journey toward transforming your residence into a sanctuary of vitality and longevity. Welcome to the premier destination for holistic health management powered by machine learning.')
 
     st.title('Heart Disease Problem in India')
+    st.write('**Heart Disease Overview:**
+
+Heart disease, also known as cardiovascular disease, refers to a range of conditions that affect the heart and blood vessels, often leading to various complications. It is a leading cause of death worldwide, encompassing conditions such as coronary artery disease, heart failure, arrhythmias, and heart valve problems.
+
+**Types of Heart Disease:**
+
+1. **Coronary Artery Disease (CAD):** Occurs when plaque builds up in the coronary arteries, restricting blood flow to the heart muscle.
+2. **Heart Failure:** A condition where the heart cannot pump enough blood to meet the body's needs.
+3. **Arrhythmias:** Irregular heartbeats, including tachycardia (fast heartbeat) and bradycardia (slow heartbeat).
+4. **Heart Valve Problems:** Conditions affecting the valves that regulate blood flow within the heart, such as stenosis (narrowing) or regurgitation (leakage).
+
+**Symptoms of Heart Disease:**
+
+1. **Chest Pain or Discomfort:** Often described as tightness, pressure, squeezing, or pain in the chest.
+2. **Shortness of Breath:** Difficulty breathing, especially during physical activity or when lying down.
+3. **Fatigue:** Feeling tired or weak, even with minimal exertion.
+4. **Swelling:** Fluid retention, leading to swelling in the legs, ankles, feet, or abdomen.
+5. **Dizziness or Lightheadedness:** Feeling faint or dizzy, especially upon standing up quickly.
+6. **Irregular Heartbeat:** Sensation of fluttering or palpitations in the chest.
+7. **Nausea or Indigestion:** Some people may experience stomach discomfort, nausea, or vomiting.
+
+**Treatment of Heart Disease:**
+
+1. **Medications:** Depending on the type of heart disease, medications may be prescribed to manage symptoms, control blood pressure, lower cholesterol levels, regulate heart rhythm, or prevent blood clots.
+2. **Lifestyle Changes:** Adopting a heart-healthy lifestyle can significantly improve heart health. This includes maintaining a balanced diet, engaging in regular exercise, quitting smoking, managing stress, and limiting alcohol intake.
+3. **Medical Procedures:** In more severe cases, medical procedures may be necessary. These can include angioplasty and stenting to open blocked arteries, coronary artery bypass surgery to reroute blood flow around blockages, valve repair or replacement surgery, or implantation of devices such as pacemakers or defibrillators.
+4. **Cardiac Rehabilitation:** A structured program involving exercise training, education, and counseling to help individuals recover from heart-related events and improve their overall cardiovascular health.
+
+Early detection, prompt treatment, and ongoing management are essential in effectively managing heart disease and reducing the risk of complications. Regular check-ups with a healthcare provider are crucial for monitoring heart health and addressing any concerns.')
 
 
      
