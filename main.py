@@ -330,12 +330,11 @@ if (selected == 'HOME'):
 # coding for CONCLUSION  page.....
 if (selected == 'CONCLUSION'):
     st.title("LET'S TRY TO FIND OUT, HOW TO BE HEALTHY IN TODAY'S WORLD")
-    
+    st.image("health tips.jpeg",use_column_width=True)
 
 
     # Balanced Diet
-    # Add a balanced diet icon using st.image() function
-    st.image("https://image.flaticon.com/icons/png/512/174/174499.png", width=100)
+
 
     st.header("1. Balanced Diet:")
     st.write("Prioritize fresh fruits, vegetables, whole grains, lean proteins, and healthy fats, while minimizing processed foods and sugary beverages.")
