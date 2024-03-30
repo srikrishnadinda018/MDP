@@ -280,7 +280,7 @@ if (selected == 'HOME'):
 
     
     
-    st.title('Parkinson's Disease Problem in India')
+    st.title('Parkinson Disease Problem in India')
     st.image("home_parkin.jpeg",use_column_width=True)
     
 
