@@ -278,36 +278,34 @@ if (selected == 'HOME'):
     st.write("Early detection, prompt treatment, and ongoing monitoring are crucial for improving cancer outcomes and quality of life. Regular screenings and consultations with healthcare professionals can aid in early diagnosis and appropriate management.")
 
 
-   
-
-
-    st.title(' Parkinson's Disease Problem in India')
+    
+    
+    st.title('Parkinson's Disease Problem in India')
     st.image("home_parkin.jpeg",use_column_width=True)
     
 
-#Parkinson's Disease Overview
-st.write("**Parkinson's Disease Overview:**")
-st.write("Parkinson's disease is a progressive neurological disorder that affects movement. It is characterized by tremors, stiffness, bradykinesia (slowness of movement), and impaired balance and coordination. Parkinson's disease results from the loss of dopamine-producing cells in the brain.")
+    #Parkinson's Disease Overview
+    st.write("**Parkinson's Disease Overview:**")
+    st.write("Parkinson's disease is a progressive neurological disorder that affects movement. It is characterized by tremors, stiffness, bradykinesia (slowness of movement), and impaired balance and coordination. Parkinson's disease results from the loss of dopamine-producing cells in the brain.")
 
-# Symptoms of Parkinson's Disease
-st.write("**Symptoms of Parkinson's Disease:**")
-st.write("1. **Tremors:** Involuntary shaking of the hands, arms, legs, jaw, or face, typically at rest.")
-st.write("2. **Bradykinesia:** Slowness of movement, making simple tasks like buttoning a shirt or walking difficult.")
-st.write("3. **Stiffness:** Muscle rigidity, which can cause discomfort or pain and limit range of motion.")
-st.write("4. **Impaired Balance and Coordination:** Difficulty maintaining balance and coordinating movements, leading to falls or unsteady gait.")
-st.write("5. **Postural Instability:** Difficulty adjusting posture and maintaining an upright position, increasing the risk of falls.")
-st.write("6. **Speech and Swallowing Problems:** Soft or slurred speech, difficulty swallowing, or excessive drooling.")
-st.write("7. **Micrographia:** Handwriting becomes small and cramped.")
-st.write("8. **Masked Face:** Reduced facial expressions, giving the appearance of a 'masked' or expressionless face.")
+    #Symptoms of Parkinson's Disease
+    st.write("**Symptoms of Parkinson's Disease:**")
+    st.write("1. **Tremors:** Involuntary shaking of the hands, arms, legs, jaw, or face, typically at rest.")
+    st.write("2. **Bradykinesia:** Slowness of movement, making simple tasks like buttoning a shirt or walking difficult.")
+    st.write("3. **Stiffness:** Muscle rigidity, which can cause discomfort or pain and limit range of motion.")
+    st.write("4. **Impaired Balance and Coordination:** Difficulty maintaining balance and coordinating movements, leading to falls or unsteady gait.")
+    st.write("5. **Postural Instability:** Difficulty adjusting posture and maintaining an upright position, increasing the risk of falls.")
+    st.write("6. **Speech and Swallowing Problems:** Soft or slurred speech, difficulty swallowing, or excessive drooling.")
+    st.write("7. **Micrographia:** Handwriting becomes small and cramped.")
+    st.write("8. **Masked Face:** Reduced facial expressions, giving the appearance of a 'masked' or expressionless face.")
 
-# Treatment of Parkinson's Disease
-st.write("**Treatment of Parkinson's Disease:**")
-st.write("1. **Medications:** Dopamine-replacement drugs, such as levodopa, can help alleviate motor symptoms. Other medications may be prescribed to manage non-motor symptoms, such as depression, sleep disturbances, or cognitive impairment.")
-st.write("2. **Deep Brain Stimulation (DBS):** A surgical procedure that involves implanting electrodes in the brain to deliver electrical stimulation, helping to regulate abnormal brain activity and reduce motor symptoms.")
-st.write("3. **Physical Therapy:** Exercises and techniques to improve mobility, flexibility, balance, and coordination.")
-st.write("4. **Speech Therapy:** Exercises to strengthen muscles involved in speech and swallowing, as well as strategies to improve communication.")
-st.write("5. **Occupational Therapy:** Techniques and adaptations to help individuals perform daily activities more independently and safely.")
-st.write("6. **Lifestyle Modifications:** Regular exercise, healthy diet, adequate sleep, stress management, and avoiding falls can help improve overall well-being and quality of life.")
+    #Treatment of Parkinson's Disease
+    st.write("**Treatment of Parkinson's Disease:**")
+    st.write("1. **Medications:** Dopamine-replacement drugs, such as levodopa, can help alleviate motor symptoms. Other medications may be prescribed to manage non-motor symptoms, such as depression, sleep disturbances, or cognitive impairment.")
+    st.write("2. **Deep Brain Stimulation (DBS):** A surgical procedure that involves implanting electrodes in the brain to deliver electrical stimulation, helping to regulate abnormal brain activity and reduce motor symptoms.")
+    st.write("3. **Physical Therapy:** Exercises and techniques to improve mobility, flexibility, balance, and coordination.")
+    st.write("4. **Speech Therapy:** Exercises to strengthen muscles involved in speech and swallowing, as well as strategies to improve communication.")
+    st.write("5. **Occupational Therapy:** Techniques and adaptations to help individuals perform daily activities more independently and safely.")
+    st.write("6. **Lifestyle Modifications:** Regular exercise, healthy diet, adequate sleep, stress management, and avoiding falls can help improve overall well-being and quality of life.")
 
-st.write("While there is currently no cure for Parkinson's disease, early diagnosis and comprehensive management can help control symptoms, slow disease progression, and improve quality of life. Regular follow-up with healthcare professionals, including neurologists and specialists in movement disorders, is essential for optimal care and support.")
-
+    st.write("While there is currently no cure for Parkinson's disease, early diagnosis and comprehensive management can help control symptoms, slow disease progression, and improve quality of life. Regular follow-up with healthcare professionals, including neurologists and specialists in movement disorders, is essential for optimal care and support.")
