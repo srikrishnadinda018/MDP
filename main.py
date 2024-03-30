@@ -203,6 +203,12 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
 
 
 #coding for Home page.....
-st.title(' MULTIPLE DISEASE PREDICTION SYSTEM USING MACHINE LEARNING')
-st.image("disease.jpeg",use_column_width=True)
-st.write('Experience our distinguished health hub, where advanced machine learning technology intersects with proactive wellness. Our platform leverages machine learning algorithms to deliver personalized disease prediction, fitness tracking, and comprehensive wellness resources, facilitating your pursuit of optimal health. Equipped with data-driven insights and decision-making tools, we endeavor to cultivate a community of health-conscious individuals committed to enhancing their well-being. Step into our realm and embark on a journey toward transforming your residence into a sanctuary of vitality and longevity. Welcome to the premier destination for holistic health management powered by machine learning.')
+if (selected == 'HOME'):
+    st.title(' MULTIPLE DISEASE PREDICTION SYSTEM USING MACHINE LEARNING')
+    st.image("disease.jpeg",use_column_width=True)
+    st.write('Experience our distinguished health hub, where advanced machine learning technology intersects with proactive wellness. Our platform leverages machine learning algorithms to deliver personalized disease prediction, fitness tracking, and comprehensive wellness resources, facilitating your pursuit of optimal health. Equipped with data-driven insights and decision-making tools, we endeavor to cultivate a community of health-conscious individuals committed to enhancing their well-being. Step into our realm and embark on a journey toward transforming your residence into a sanctuary of vitality and longevity. Welcome to the premier destination for holistic health management powered by machine learning.')
+
+    st.title('Heart Disease Problem in India')
+
+
+     
