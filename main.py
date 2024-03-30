@@ -196,3 +196,12 @@ if (selected == 'PARKINSON DISEASE PREDICTION'):
     st.image("images (7).jpeg", caption="Statistical View Of Parkinson's Disease In India", use_column_width=True)
     st.image("images (8).png", caption="Statistical Chart Of Age-Group vs First Time Parkinson's Disease", use_column_width=True)
     st.image("images (9).jpg", caption="Statistical Chart Of Gender vs First Time Parkinson's Disease", use_column_width=True)
+
+
+
+
+
+
+#coding for Home page.....
+st.title(' MULTIPLE DISEASE PREDICTION SYSTEM USING MACHINE LEARNING')
+
